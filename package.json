@@ -15,5 +15,8 @@
     "url": "git+https://github.com/dani-beltran/simple-css-animations.git"
   },
   "author": "Daniel J.L. Beltran",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
 }
