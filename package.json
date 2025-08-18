@@ -1,0 +1,19 @@
+{
+  "name": "@danilidonbeltran/simple-css-animations",
+  "version": "1.0.0",
+  "description": "Some simple CSS animations",
+  "main": "src/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "animation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dani-beltran/simple-css-animations.git"
+  },
+  "author": "Daniel J.L. Beltran",
+  "license": "ISC"
+}
