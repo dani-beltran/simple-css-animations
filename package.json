@@ -2,8 +2,16 @@
   "name": "@danilidonbeltran/simple-css-animations",
   "version": "1.0.0",
   "description": "Some simple CSS animations",
-  "main": "src/index.css",
+  "main": "dist/index.css",
+  "files": [
+    "dist/",
+    "src/",
+    "README.md"
+  ],
   "scripts": {
+    "build": "sass src/index.scss dist/index.css --style=compressed",
+    "dev": "sass src/index.scss dist/index.css --watch",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,5 +26,8 @@
   "license": "ISC",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0"
   }
 }
