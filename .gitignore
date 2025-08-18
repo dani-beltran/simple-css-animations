@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Build files
+dist/
+
+# IDE - VSCode
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
