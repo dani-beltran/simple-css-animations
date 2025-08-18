@@ -2,6 +2,8 @@
 
 A lightweight collection of simple, performant CSS animations for modern web applications. This library provides a comprehensive set of keyframe animations using modern CSS properties like `translate`, `scale`, and `rotate` for optimal performance.
 
+Built with SCSS and compiled to a single, optimized CSS file for easy integration.
+
 ## Installation
 
 ```bash
@@ -10,15 +12,20 @@ npm install @danilidonbeltran/simple-css-animations
 
 ## Usage
 
-### Import the entire library
+### Import the compiled CSS library
 ```css
 @import url("@danilidonbeltran/simple-css-animations");
 ```
 
-### Import specific animation types
-```css
-@import url("@danilidonbeltran/simple-css-animations/src/show-animations.css");
-@import url("@danilidonbeltran/simple-css-animations/src/hide-animations.css");
+Or in your HTML:
+```html
+<link rel="stylesheet" href="node_modules/@danilidonbeltran/simple-css-animations/dist/index.css">
+```
+
+### Using with build tools
+If you're using a bundler like Webpack, Vite, or similar:
+```javascript
+import '@danilidonbeltran/simple-css-animations';
 ```
 
 ### Apply animations to elements
@@ -30,6 +37,32 @@ npm install @danilidonbeltran/simple-css-animations
 .fade-element {
   animation: fade-in 0.5s ease-in-out;
 }
+```
+
+## Development
+
+This project uses SCSS for development and compiles to a single CSS file for distribution.
+
+### Build Process
+```bash
+# Install dependencies
+npm install
+
+# Build the CSS from SCSS sources
+npm run build
+
+# Watch for changes during development
+npm run dev
+```
+
+### Project Structure
+```
+src/
+├── index.scss           # Main entry point
+├── show-animations.scss # Entrance animations
+└── hide-animations.scss # Exit animations
+dist/
+└── index.css           # Compiled CSS (ready for production)
 ```
 
 ## Available Animations
