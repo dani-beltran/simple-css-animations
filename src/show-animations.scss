@@ -572,12 +572,12 @@
 @keyframes zoom-in-left {
 	from {
 		scale: 0;
-		translate: 0px -1000px;
+		translate: -1000px 0px;
 		opacity: 0;
 	}
 	60% {
 		scale: 0.475;
-		translate: 0px 10px;
+		translate: 10px 0px;
 		opacity: 1;
 	}
 	to {
@@ -589,12 +589,12 @@
 @keyframes zoom-in-right {
 	from {
 		scale: 0;
-		translate: 0px 1000px;
+		translate: 1000px 0px;
 		opacity: 0;
 	}
 	60% {
 		scale: 0.475;
-		translate: 0px -10px;
+		translate: -10px 0px;
 		opacity: 1;
 	}
 	to {
