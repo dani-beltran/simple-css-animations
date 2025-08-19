@@ -1,6 +1,6 @@
 {
   "name": "@danilidonbeltran/simple-css-animations",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Some simple CSS animations",
   "main": "dist/style.css",
   "files": [
